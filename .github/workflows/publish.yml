@@ -13,9 +13,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
-        source: https://nuget.pkg.github.com/GasiorowskiPiotr/index.json 
-      env:
-        NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_AUTH_TOKEN }}
     - name: Install dependencies
       run: dotnet restore
     - name: Build
@@ -24,5 +21,12 @@ jobs:
       run: dotnet test --no-restore --verbosity normal
     - name: Pack
       run: dotnet pack --configuration Release -o pkgs -p:PackageVersion=0.1.$GITHUB_RUN_NUMBER
+    - name: Setup Packages
+      uses: actions/setup-dotnet@master
+      with:
+        dotnet-version: 3.1.100
+        source-url: htps://nuget.pkg.github.com/GasiorowskiPiotr/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_AUTH_TOKEN }}
     - name: Publish
-      run: dotnet nuget push -s "https://nuget.pkg.github.com/GasiorowskiPiotr/index.json" "pkgs/*.nupkg" --no-symbols true
+      run: dotnet nuget push -s Source "pkgs/*.nupkg" --no-symbols true
