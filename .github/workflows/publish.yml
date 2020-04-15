@@ -27,6 +27,6 @@ jobs:
         dotnet-version: 3.1.100
         source-url: htps://nuget.pkg.github.com/GasiorowskiPiotr/index.json
       env:
-        NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_AUTH_TOKEN }}
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Publish
       run: dotnet nuget push -s Source "pkgs/*.nupkg" --no-symbols true
