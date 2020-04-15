@@ -4,6 +4,9 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>DevelopIn.Cloud.CQRS.Domain.Common</AssemblyName>
     <RootNamespace>DevelopIn.Cloud.CQRS.Domain.Common</RootNamespace>
+    <Authors>Piotr Gąsiorowski &lt;piotrek@developin.cloud&gt;</Authors>
+    <Company>DevelopIn.Cloud</Company>
+    <RepositoryUrl>https://github.com/GasiorowskiPiotr</RepositoryUrl>
   </PropertyGroup>
 
 </Project>

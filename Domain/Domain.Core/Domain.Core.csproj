@@ -6,6 +6,7 @@
     <RootNamespace>DevelopIn.Cloud.CQRS.Domain.Core</RootNamespace>
     <Authors>Piotr Gąsiorowski &lt;piotrek@developin.cloud&gt;</Authors>
     <Company>DevelopIn.Cloud</Company>
+    <RepositoryUrl>https://github.com/GasiorowskiPiotr</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
