@@ -20,6 +20,6 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
     - name: Pack
-      run: dotnet pack --configuration Release -o pkgs
+      run: dotnet pack --configuration Release -o pkgs -p:PackageVersion=0.1.$GITHUB_RUN_NUMBER
     - name: Publish
       run: dotnet nuget push "pkgs/*.nupkg" --source "github"
