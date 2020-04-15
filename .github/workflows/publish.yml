@@ -25,4 +25,4 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release -o pkgs -p:PackageVersion=0.1.$GITHUB_RUN_NUMBER
     - name: Publish
-      run: dotnet nuget push -s Source "pkgs/*.nupkg" --no-symbols true
+      run: dotnet nuget push -s "https://nuget.pkg.github.com/GasiorowskiPiotr/index.json" "pkgs/*.nupkg" --no-symbols true
