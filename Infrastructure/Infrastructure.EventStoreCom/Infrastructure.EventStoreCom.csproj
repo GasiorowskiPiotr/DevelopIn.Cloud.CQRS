@@ -6,7 +6,7 @@
     <RootNamespace>DevelopIn.Cloud.CQRS.Infrastructure.EventStoreCom</RootNamespace>
     <Authors>Piotr Gąsiorowski &lt;piotrek@developin.cloud&gt;</Authors>
     <Company>DevelopIn.Cloud</Company>
-    <RepositoryUrl>https://github.com/GasiorowskiPiotr</RepositoryUrl>
+    <RepositoryUrl>https://github.com/GasiorowskiPiotr/DevelopIn.Cloud.CQRS</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
