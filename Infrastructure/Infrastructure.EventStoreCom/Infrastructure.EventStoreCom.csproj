@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>DevelopIn.Cloud.CQRS.Infrastructure.EventStoreCom</AssemblyName>
+    <RootNamespace>DevelopIn.Cloud.CQRS.Infrastructure.EventStoreCom</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EventStore.Client" Version="5.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Domain.Core\Domain.Core.csproj" />
+  </ItemGroup>
+
+</Project>

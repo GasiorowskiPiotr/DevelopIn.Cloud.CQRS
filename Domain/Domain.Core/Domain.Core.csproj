@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>DevelopIn.Cloud.CQRS.Domain.Core</AssemblyName>
+    <RootNamespace>DevelopIn.Cloud.CQRS.Domain.Core</RootNamespace>
+    <Authors>Piotr Gąsiorowski &lt;piotrek@developin.cloud&gt;</Authors>
+    <Company>DevelopIn.Cloud</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Common\Domain.Common.csproj" />
+  </ItemGroup>
+
+</Project>
